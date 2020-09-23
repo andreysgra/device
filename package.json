@@ -1,0 +1,70 @@
+{
+  "name": "device",
+  "version": "1.0.0",
+  "description": "Проект «Девайс» от HTML Academy",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "cross-env NODE_ENV=production gulp build",
+    "deploy": "npm run build && gh-pages -d build",
+    "dist": "npm run build && gulp zip",
+    "lintspaces": "gulp lintspaces",
+    "stylelint": "stylelint \"source/styles/**/*.less\"",
+    "eslint": "eslint \"source/js/**/*.js\"",
+    "test": "npm run lintspaces && npm run stylelint && npm run eslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/andreysgra/device.git"
+  },
+  "author": "Andrey Grachev <andreysgra@gmail.com> (https://github.com/andreysgra)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andreysgra/device/issues"
+  },
+  "homepage": "https://github.com/andreysgra/device#readme",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "autoprefixer": "^9.8.0",
+    "browser-sync": "^2.26.7",
+    "cross-env": "^7.0.2",
+    "del": "^5.1.0",
+    "eslint": "^7.2.0",
+    "gh-pages": "^3.0.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-changed": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-less": "^4.0.1",
+    "gulp-lintspaces": "^1.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-svgstore": "^7.0.1",
+    "gulp-uglify": "^3.0.2",
+    "gulp-webp": "^4.0.1",
+    "gulp-zip": "^5.0.1",
+    "husky": "^4.2.5",
+    "imagemin-jpegoptim": "^7.0.0",
+    "require-dir": "^1.2.0",
+    "stylelint": "^13.6.0",
+    "stylelint-config-standard": "^20.0.0"
+  },
+  "dependencies": {},
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    "not OperaMini all",
+    "not IE <= 11"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-push": "npm test"
+    }
+  }
+}
