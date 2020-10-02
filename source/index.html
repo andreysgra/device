@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +14,8 @@
       <div class="content-wrapper">
         <div class="page-header__logo-wrapper">
           <a class="header-logo">
-            <img class="header-logo__image" src="img/logo-header.svg" width="163" height="35" alt="Логотип компании Девайс">
+            <img class="header-logo__image" src="img/logo-header.svg" width="163" height="35"
+              alt="Логотип компании Девайс">
           </a>
         </div>
 
@@ -71,7 +73,7 @@
                 <li class="dropdown-menu__item">
                   <ul class="dropdown-menu__submenu">
                     <li class="dropdown-menu__submenu-item">
-                      <a class="dropdown-menu__link" href="#">Квадрокоптер</a>
+                      <a class="dropdown-menu__link" href="#">Квадрокоптеры</a>
                     </li>
                   </ul>
                 </li>
@@ -92,10 +94,116 @@
 
     </header>
 
-    <main class="page-main"></main>
+    <main class="page-main">
+      <h1 class="visually-hidden">Интернет-магазин гаджетов</h1>
+
+      <div class="content-wrapper">
+        <section class="slider-promo">
+          <h2 class="visually-hidden">Товары месяца</h2>
+
+          <ol class="slider-promo__list">
+            <li class="slider-promo__list-item slider-promo__list-item--current slide-promo">
+              <div class="slide-promo__image-wrapper">
+                <picture>
+                  <source type="image/webp" srcset="img/content/slider-1.webp">
+                  <img class="slide-promo__image" src="img/content/slider-1.png" width="384" height="486"
+                    alt="Палка для селфи">
+                </picture>
+              </div>
+
+              <div class="slide-promo__content">
+                <p class="slide-promo__title">Делай селфи, как&nbsp;Бен&nbsp;Стиллер!</p>
+
+                <p class="slide-promo__description">Самая длинная палка для селфи доступна в нашем магазине.<br>
+                  Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+
+                <a class="slide-promo__button button" href="#">Подробнее</a>
+
+                <dl class="slide-promo__specifications-list promo-specifications-list">
+                  <div class="promo-specifications-list__item">
+                    <dt class="promo-specifications-list__term">Длина палки</dt>
+                    <dd class="promo-specifications-list__definition">8,5 м</dd>
+                  </div>
+                  <div class="promo-specifications-list__item">
+                    <dt class="promo-specifications-list__term">Вес палки</dt>
+                    <dd class="promo-specifications-list__definition">5 кг</dd>
+                  </div>
+                  <div class="promo-specifications-list__item">
+                    <dt class="promo-specifications-list__term">Материал</dt>
+                    <dd class="promo-specifications-list__definition">Карбон</dd>
+                  </div>
+                </dl>
+              </div>
+            </li>
+            <li class="slider-promo__list-item slide-promo">
+              <div class="slide-promo__image-wrapper">
+                <picture>
+                  <source type="image/webp" srcset="img/content/slider-2.webp">
+                  <img class="slide-promo__image" src="img/content/slider-2.png" width="345" height="483"
+                    alt="Фитнес-браслет">
+                </picture>
+              </div>
+
+              <div class="slide-promo__content">
+                <p class="slide-promo__title">Худеем<br>правильно!</p>
+
+                <p class="slide-promo__description">Мотивирующие фитнес-браслеты помогут найти в себе силы
+                  не&nbsp;пропускать занятия и соблюдать диету.</p>
+
+                <a class="slide-promo__button button" href="#">Подробнее</a>
+
+                <dl class="slide-promo__specifications-list promo-specifications-list">
+                  <div class="promo-specifications-list__item">
+                    <dt class="promo-specifications-list__term">Без подзарядки</dt>
+                    <dd class="promo-specifications-list__definition">48 часов</dd>
+                  </div>
+                </dl>
+              </div>
+            </li>
+            <li class="slider-promo__list-item slide-promo">
+              <div class="slide-promo__image-wrapper">
+                <picture>
+                  <source type="image/webp" srcset="img/content/slider-3.webp">
+                  <img class="slide-promo__image" src="img/content/slider-3.png" width="526" height="334"
+                    alt="Квадрокоптер">
+                </picture>
+              </div>
+
+              <div class="slide-promo__content">
+                <p class="slide-promo__title">Порхает как бабочка, жалит как пчела!</p>
+
+                <p class="slide-promo__description">Этот обычный, на первый взгляд, квадрокоптер оснащен
+                  мощным лазером, замаскированным под стандартную камеру.</p>
+
+                <a class="slide-promo__button button" href="#">Подробнее</a>
+
+                <dl class="slide-promo__specifications-list promo-specifications-list">
+                  <div class="promo-specifications-list__item">
+                    <dt class="promo-specifications-list__term">Дальность полета</dt>
+                    <dd class="promo-specifications-list__definition">800 м</dd>
+                  </div>
+                  <div class="promo-specifications-list__item">
+                    <dt class="promo-specifications-list__term">Радиус поражения</dt>
+                    <dd class="promo-specifications-list__definition">50 м</dd>
+                  </div>
+                </dl>
+              </div>
+            </li>
+          </ol>
+
+          <div class="slider-promo__controls slider-promo-controls">
+            <button class="slider-promo-controls__button slider-promo-controls__button--current" type="button"
+              aria-label="1"></button>
+            <button class="slider-promo-controls__button" type="button" aria-label="2"></button>
+            <button class="slider-promo-controls__button" type="button" aria-label="3"></button>
+          </div>
+        </section>
+      </div>
+    </main>
 
     <footer class="page-footer"></footer>
 
     <script src="js/index.min.js"></script>
   </body>
+
 </html>

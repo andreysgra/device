@@ -8,6 +8,7 @@
   padding: 14px 38px;
   min-height: 50px;
   border: none;
+  border-bottom: 2px solid transparent;
   width: 356px;
   font-family: inherit;
   font-size: inherit;
@@ -15,10 +16,14 @@
   line-height: inherit;
   color: inherit;
   background-color: transparent;
+  background-image: url("../img/icon-search.svg");
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: left center;
   outline: none;
 
   &:focus {
-    border-bottom: 2px solid @color-black;
+    border-bottom-color: @color-black;
   }
 
   &::placeholder {
