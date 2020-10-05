@@ -1,0 +1,61 @@
+.company {
+  position: relative;
+  padding-top: 18px;
+  padding-bottom: 18px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80px;
+    height: 7px;
+    background-color: @color-black;
+  }
+}
+
+.company__title {
+  margin-top: 39px;
+  margin-bottom: 39px;
+  font-family: @font-family-secondary;
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 58px;
+  letter-spacing: 0.2em;
+}
+
+.company__text {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  line-height: 28px;
+}
+
+.company__list {
+  display: grid;
+  row-gap: 15px;
+  margin-top: 60px;
+  margin-bottom: 66px;
+  padding-left: 32px;
+  list-style: none;
+}
+
+.company__list-item {
+  position: relative;
+  font-family: @font-family-secondary;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 28px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -32px;
+    top: 50%;
+    transform: translateY(-50%);
+    box-sizing: border-box;
+    width: 8px;
+    height: 8px;
+    border: 2px solid @color-grey-light;
+    border-radius: 50%;
+  }
+}
