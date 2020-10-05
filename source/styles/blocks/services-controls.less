@@ -42,12 +42,27 @@
     transition: height 0.3s ease-in-out;
   }
 
+  &::after {
+    content: none;
+    position: absolute;
+    top: 0;
+    right: -117px;
+    width: 117px;
+    height: 100%;
+    background-color: @color-black;
+    transition: width 0.3s ease-in-out;
+  }
+
   &:hover::before {
     height: 100%;
   }
 
   &:active::before {
     content: none;
+  }
+
+  &:active::after {
+    content: "";
   }
 
   &--current {
@@ -57,16 +72,9 @@
     &::before {
       content: none;
     }
-  }
 
-  &:active::after,
-  &--current::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: -117px;
-    width: 117px;
-    height: 100%;
-    background-color: @color-black;
+    &::after {
+      content: "";
+    }
   }
 }

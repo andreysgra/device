@@ -1,0 +1,21 @@
+.brands {
+  display: grid;
+  grid-template-columns: repeat(4, 260px);
+  gap: 40px;
+}
+
+.brands__link {
+  overflow: hidden;
+  width: 260px;
+  height: 100px;
+}
+
+.brands__image {
+  display: block;
+  filter: grayscale(100%) opacity(20%);
+  transition: filter 1s ease-in-out;
+
+  .brands__link:hover & {
+    filter: none;
+  }
+}
