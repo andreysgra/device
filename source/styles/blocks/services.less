@@ -1,0 +1,17 @@
+.services {
+  display: grid;
+  grid-template-columns: 284px 800px;
+  column-gap: 76px;
+}
+
+.services__list {
+  .list-reset();
+}
+
+.services__list-item {
+  display: none;
+
+  &--current {
+    display: block;
+  }
+}
