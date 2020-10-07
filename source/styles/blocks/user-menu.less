@@ -1,8 +1,6 @@
 .user-menu {
   display: grid;
-  grid-template-columns: 540px repeat(2, 250px);
-  padding: 14px var(--header-padding);
-  background-color: @color-yellow;
+  grid-template-columns: repeat(2, 250px);
 }
 
 .user-menu__list {
@@ -14,11 +12,15 @@
 
 .user-menu__login {
   column-gap: 20px;
+
+  &--right {
+    justify-content: end;
+  }
 }
 
 .user-menu__action {
   column-gap: 42px;
-  justify-content: flex-end;
+  justify-content: end;
 }
 
 .user-menu__link {
@@ -52,5 +54,17 @@
   &--icon-cart {
     background-image: url("../img/icon-cart.svg");
     background-size: 10px 10px;
+  }
+
+  &--icon-user-yellow {
+    background-image: url("../img/icon-user-yellow.svg");
+  }
+
+  &--icon-chart-yellow {
+    background-image: url("../img/icon-chart-yellow.svg");
+  }
+
+  &--icon-cart-yellow {
+    background-image: url("../img/icon-cart-yellow.svg");
   }
 }
