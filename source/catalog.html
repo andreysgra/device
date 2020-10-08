@@ -128,7 +128,74 @@
 
           <div class="catalog-wrapper__left-content-wrapper">
             <form class="form-catalog" action="https://echo.htmlacademy.ru/" method="post">
+              <fieldset class="form-catalog__fieldset">
+                <legend class="form-catalog__legend">Стоимость</legend>
 
+                <div class="form-catalog__price-filter price-filter">
+                  <div class="price-filter__range">
+                    <div class="price-filter__range-scale">
+                      <div class="price-filter__range-bar" style="width: 57%;"></div>
+
+                      <button class="price-filter__range-handle price-filter__range-handle--min" type="button"  style="left: 0;" aria-label="Минимально"></button>
+                      <button class="price-filter__range-handle price-filter__range-handle--max" type="button" style="left: 57%;" aria-label="Максимально"></button>
+                    </div>
+                  </div>
+
+                  <p class="price-filter__interval">
+                    <label class="price-filter__label">От
+                      <input class="price-filter__input" type="text" name="min-price" value="0">
+                    </label>
+
+                    <label class="price-filter__label price-filter__label--max-price">До
+                      <input class="price-filter__input" type="text" name="max-price" value="5000">
+                    </label>
+                  </p>
+                </div>
+              </fieldset>
+
+              <fieldset class="form-catalog__fieldset">
+                <legend class="form-catalog__legend">Цвет</legend>
+
+                <ul class="form-catalog__list">
+                  <li class="form-catalog__list-item">
+                    <input class="form-catalog__checkbox visually-hidden" type="checkbox" id="colorblack" name="color" checked>
+                    <label class="form-catalog__label-checkbox form-label-checkbox form-label" for="colorblack">Чёрный</label>
+                  </li>
+                  <li class="form-catalog__list-item">
+                    <input class="form-catalog__checkbox visually-hidden" type="checkbox" id="colorwhite" name="color">
+                    <label class="form-catalog__label-checkbox form-label-checkbox form-label" for="colorwhite">Белый</label>
+                  </li>
+                  <li class="form-catalog__list-item">
+                    <input class="form-catalog__checkbox visually-hidden" type="checkbox" id="colorblue" name="color" checked>
+                    <label class="form-catalog__label-checkbox form-label-checkbox form-label" for="colorblue">Синий</label>
+                  </li>
+                  <li class="form-catalog__list-item">
+                    <input class="form-catalog__checkbox visually-hidden" type="checkbox" id="colorred" name="color" checked>
+                    <label class="form-catalog__label-checkbox form-label-checkbox form-label" for="colorred">Красный</label>
+                  </li>
+                  <li class="form-catalog__list-item">
+                    <input class="form-catalog__checkbox visually-hidden" type="checkbox" id="colorpink" name="color" disabled>
+                    <label class="form-catalog__label-checkbox form-label-checkbox form-label" for="colorpink">Розовый</label>
+                  </li>
+                </ul>
+              </fieldset>
+
+              <fieldset class="form-catalog__fieldset form-catalog__fieldset-bluetooth">
+                <legend class="form-catalog__legend">Bluetooth</legend>
+
+                <ul class="form-catalog__list">
+                  <li class="form-catalog__list-item">
+                    <input class="form-catalog__radio visually-hidden" type="radio" id="bluetoothhas" name="bluetooth" checked>
+                    <label class="form-catalog__label-radio form-label-radio form-label" for="bluetoothhas">Есть</label>
+                  </li>
+                  <li class="form-catalog__list-item">
+                    <input class="form-catalog__radio visually-hidden" type="radio" id="bluetoothno" name="bluetooth">
+                    <label class="form-catalog__label-radio form-label-radio form-label" for="bluetoothno">Нет</label>
+                  </li>
+                </ul>
+              </fieldset>
+
+              <button class="form-catalog__button button" type="submit">Показать</button>
             </form>
           </div>
         </div>
