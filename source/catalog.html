@@ -136,12 +136,14 @@
                     <div class="price-filter__range-scale">
                       <div class="price-filter__range-bar" style="width: 57%;"></div>
 
-                      <button class="price-filter__range-handle price-filter__range-handle--min" type="button"  style="left: 0;" aria-label="Минимально"></button>
-                      <button class="price-filter__range-handle price-filter__range-handle--max" type="button" style="left: 57%;" aria-label="Максимально"></button>
+                      <button class="price-filter__range-handle price-filter__range-handle--min" type="button"
+                        style="left: 0;" aria-label="Минимально"></button>
+                      <button class="price-filter__range-handle price-filter__range-handle--max" type="button"
+                        style="left: 57%;" aria-label="Максимально"></button>
                     </div>
                   </div>
 
-                  <p class="price-filter__interval">
+                  <div class="price-filter__interval">
                     <label class="price-filter__label">От
                       <input class="price-filter__input" type="text" name="min-price" value="0">
                     </label>
@@ -149,7 +151,7 @@
                     <label class="price-filter__label price-filter__label--max-price">До
                       <input class="price-filter__input" type="text" name="max-price" value="5000">
                     </label>
-                  </p>
+                  </div>
                 </div>
               </fieldset>
 
@@ -158,24 +160,33 @@
 
                 <ul class="form-catalog__list">
                   <li class="form-catalog__list-item">
-                    <input class="form-catalog__checkbox visually-hidden" type="checkbox" id="colorblack" name="color" checked>
-                    <label class="form-catalog__label-checkbox form-label-checkbox form-label" for="colorblack">Чёрный</label>
+                    <input class="form-catalog__checkbox visually-hidden" type="checkbox" id="colorblack" name="color"
+                      checked>
+                    <label class="form-catalog__label-checkbox form-label-checkbox form-label"
+                      for="colorblack">Чёрный</label>
                   </li>
                   <li class="form-catalog__list-item">
                     <input class="form-catalog__checkbox visually-hidden" type="checkbox" id="colorwhite" name="color">
-                    <label class="form-catalog__label-checkbox form-label-checkbox form-label" for="colorwhite">Белый</label>
+                    <label class="form-catalog__label-checkbox form-label-checkbox form-label"
+                      for="colorwhite">Белый</label>
                   </li>
                   <li class="form-catalog__list-item">
-                    <input class="form-catalog__checkbox visually-hidden" type="checkbox" id="colorblue" name="color" checked>
-                    <label class="form-catalog__label-checkbox form-label-checkbox form-label" for="colorblue">Синий</label>
+                    <input class="form-catalog__checkbox visually-hidden" type="checkbox" id="colorblue" name="color"
+                      checked>
+                    <label class="form-catalog__label-checkbox form-label-checkbox form-label"
+                      for="colorblue">Синий</label>
                   </li>
                   <li class="form-catalog__list-item">
-                    <input class="form-catalog__checkbox visually-hidden" type="checkbox" id="colorred" name="color" checked>
-                    <label class="form-catalog__label-checkbox form-label-checkbox form-label" for="colorred">Красный</label>
+                    <input class="form-catalog__checkbox visually-hidden" type="checkbox" id="colorred" name="color"
+                      checked>
+                    <label class="form-catalog__label-checkbox form-label-checkbox form-label"
+                      for="colorred">Красный</label>
                   </li>
                   <li class="form-catalog__list-item">
-                    <input class="form-catalog__checkbox visually-hidden" type="checkbox" id="colorpink" name="color" disabled>
-                    <label class="form-catalog__label-checkbox form-label-checkbox form-label" for="colorpink">Розовый</label>
+                    <input class="form-catalog__checkbox visually-hidden" type="checkbox" id="colorpink" name="color"
+                      disabled>
+                    <label class="form-catalog__label-checkbox form-label-checkbox form-label"
+                      for="colorpink">Розовый</label>
                   </li>
                 </ul>
               </fieldset>
@@ -185,7 +196,8 @@
 
                 <ul class="form-catalog__list">
                   <li class="form-catalog__list-item">
-                    <input class="form-catalog__radio visually-hidden" type="radio" id="bluetoothhas" name="bluetooth" checked>
+                    <input class="form-catalog__radio visually-hidden" type="radio" id="bluetoothhas" name="bluetooth"
+                      checked>
                     <label class="form-catalog__label-radio form-label-radio form-label" for="bluetoothhas">Есть</label>
                   </li>
                   <li class="form-catalog__list-item">
@@ -234,7 +246,89 @@
 
           <div class="catalog-wrapper__right-content-wrapper">
             <div class="catalog">
+              <h2 class="visually-hidden">Каталог товаров</h2>
+              <ul class="catalog__list">
+                <li class="catalog__list-item card-product">
+                  <picture class="card-product__image-wrapper">
+                    <source type="image/webp" srcset="img/content/item-1.webp">
+                    <img class="card-product__image" src="img/content/item-1.jpg" width="360" height="380"
+                      alt="Изображение любительской селфи-палки">
+                  </picture>
 
+                  <div class="card-product__description-wrapper">
+                    <h3 class="card-product__title">
+                      <a class="card-product__link" href="blank.html">Любительская селфи-палка</a>
+                    </h3>
+
+                    <p class="card-product__price">500 руб.</p>
+                  </div>
+
+                  <div class="card-product__popup">
+                    <a class="card-product__button button" href="blank.html">В корзину</a>
+                    <a class="card-product__link-compare" href="blank.html">Добавить к сравнению</a>
+                  </div>
+                </li>
+                <li class="catalog__list-item card-product">
+                  <picture class="card-product__image-wrapper">
+                    <source type="image/webp" srcset="img/content/item-2.webp">
+                    <img class="card-product__image" src="img/content/item-2.jpg" width="360" height="380"
+                      alt="Изображение профессиональной селфи-палки">
+                  </picture>
+
+                  <div class="card-product__description-wrapper">
+                    <h3 class="card-product__title">
+                      <a class="card-product__link" href="blank.html">Профессиональная селфи-палка</a>
+                    </h3>
+
+                    <p class="card-product__price">1 500 руб.</p>
+                  </div>
+
+                  <div class="card-product__popup">
+                    <a class="card-product__button button" href="blank.html">В корзину</a>
+                    <a class="card-product__link-compare" href="blank.html">Добавить к сравнению</a>
+                  </div>
+                </li>
+                <li class="catalog__list-item card-product">
+                  <picture class="card-product__image-wrapper">
+                    <source type="image/webp" srcset="img/content/item-3.webp">
+                    <img class="card-product__image" src="img/content/item-3.jpg" width="360" height="380"
+                      alt="Изображение непотопляемой селфи-палки">
+                  </picture>
+
+                  <div class="card-product__description-wrapper">
+                    <h3 class="card-product__title">
+                      <a class="card-product__link" href="blank.html">Непотопляемая селфи-палка</a>
+                    </h3>
+
+                    <p class="card-product__price">2 500 руб.</p>
+                  </div>
+
+                  <div class="card-product__popup">
+                    <a class="card-product__button button" href="blank.html">В корзину</a>
+                    <a class="card-product__link-compare" href="blank.html">Добавить к сравнению</a>
+                  </div>
+                </li>
+                <li class="catalog__list-item card-product card-product--new">
+                  <picture class="card-product__image-wrapper">
+                    <source type="image/webp" srcset="img/content/item-4.webp">
+                    <img class="card-product__image" src="img/content/item-4.jpg" width="360" height="380"
+                      alt="Изображение селфи-палки «Следуй за мной»">
+                  </picture>
+
+                  <div class="card-product__description-wrapper">
+                    <h3 class="card-product__title">
+                      <a class="card-product__link" href="blank.html">Селфи-палка «Следуй за мной»</a>
+                    </h3>
+
+                    <p class="card-product__price">4 900 руб.</p>
+                  </div>
+
+                  <div class="card-product__popup">
+                    <a class="card-product__button button" href="blank.html">В корзину</a>
+                    <a class="card-product__link-compare" href="blank.html">Добавить к сравнению</a>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

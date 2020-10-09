@@ -42,10 +42,8 @@
 }
 
 .price-filter__interval {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .price-filter__label {
@@ -58,7 +56,7 @@
 
 .price-filter__input {
   padding: 2px;
-  width: 80px;
+  width: 60px;
   height: 16px;
   box-sizing: border-box;
   border: 0;

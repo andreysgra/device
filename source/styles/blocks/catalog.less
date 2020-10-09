@@ -1,5 +1,13 @@
 .catalog {
-  padding-top: 70px;
-  padding-bottom: 70px;
+  box-sizing: border-box;
+  padding: 70px 0 70px 72px;
   width: 832px;
+}
+
+.catalog__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 40px;
+  row-gap: 28px;
+  .list-reset();
 }
