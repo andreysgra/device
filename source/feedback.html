@@ -103,7 +103,29 @@
     <main class="page-main">
       <div class="content-wrapper">
         <div class="page-main__header">
-          <h1 class="page-main__title">Страница находится в разработке</h1>
+          <h1 class="page-main__title">Напишите нам</h1>
+        </div>
+
+        <div class="page-main__modal modal-form">
+          <form class="form-feedback" action="https://echo.htmlacademy.ru/" method="POST">
+            <div class="form-feedback__content-wrapper">
+              <label class="form-feedback__label">Ваше имя:
+                <input class="form-feedback__input form-input" type="text" name="name" placeholder="Имя Фамилия" required>
+              </label>
+
+              <label class="form-feedback__label">Ваш e-mail:
+                <input class="form-feedback__input form-input" type="email" name="email" placeholder="email@example.com"
+                  required>
+              </label>
+
+              <label class="form-feedback__label form-feedback__label-textarea">Текст письма:
+                <textarea class="form-feedback__textarea form-input form-textarea" name="message"
+                  placeholder="В свободной форме"></textarea>
+              </label>
+            </div>
+
+            <button class="form-feedback__button button" type="submit">Отправить</button>
+          </form>
         </div>
       </div>
     </main>
