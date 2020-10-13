@@ -1,0 +1,30 @@
+.dropdown-menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, max-content));
+  column-gap: 63px;
+  box-sizing: border-box;
+  padding: 16px var(--header-padding) 42px;
+  width: var(--content-width-desktop);
+  .list-reset();
+
+  background-color: @color-yellow;
+}
+
+.dropdown-menu__submenu {
+  display: grid;
+  row-gap: 16px;
+  .list-reset();
+}
+
+.dropdown-menu__link {
+  color: inherit;
+  text-decoration: none;
+
+  &[href]:hover {
+    opacity: 0.6;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
+}

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Девайс: интернет-магазин гаджетов</title>
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+
+  <body class="page-body">
+    <header class="page-header">
+      <div class="content-wrapper">
+        <div class="page-header__logo-wrapper">
+          <a class="header-logo" href="index.html">
+            <img class="header-logo__image" src="img/logo-header.svg" width="163" height="35"
+              alt="Логотип компании Девайс">
+          </a>
+        </div>
+
+        <div class="page-header__user-menu">
+          <form class="form-search" action="http://echo.htmlacademy.ru" method="GET">
+            <input class="form-search__search" type="search" placeholder="Поиск по сайту">
+            <button class="form-search__submit" type="submit">Найти</button>
+          </form>
+
+          <div class="user-menu">
+            <ul class="user-menu__list user-menu__login">
+              <li class="user-menu__list-item">
+                <a class="user-menu__link user-menu__link--icon user-menu__link--icon-user" href="blank.html">Валентин
+                  Петухов</a>
+              </li>
+              <li class="user-menu__list-item">
+                <a class="user-menu__link" href="blank.html">Выйти</a>
+              </li>
+            </ul>
+
+            <ul class="user-menu__list user-menu__action">
+              <li class="user-menu__list-item">
+                <a class="user-menu__link user-menu__link--icon user-menu__link--icon-chart"
+                  href="blank.html">Сравнить</a>
+              </li>
+              <li class="user-menu__list-item">
+                <a class="user-menu__link user-menu__link--icon user-menu__link--icon-cart"
+                  href="blank.html">Корзина</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <nav class="page-header__main-nav main-nav">
+          <ul class="main-menu">
+            <li class="main-menu__item">
+              <a class="main-menu__link main-menu__link--catalog" href="blank.html">Каталог товаров</a>
+
+              <ul class="main-menu__dropdown-menu dropdown-menu">
+                <li class="dropdown-menu__item">
+                  <ul class="dropdown-menu__submenu">
+                    <li class="dropdown-menu__submenu-item">
+                      <a class="dropdown-menu__link" href="blank.html">Виртуальная реальность</a>
+                    </li>
+                    <li class="dropdown-menu__submenu-item">
+                      <a class="dropdown-menu__link" href="catalog.html">Моноподы для селфи</a>
+                    </li>
+                    <li class="dropdown-menu__submenu-item">
+                      <a class="dropdown-menu__link" href="blank.html">Экшн-камеры</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown-menu__item">
+                  <ul class="dropdown-menu__submenu">
+                    <li class="dropdown-menu__submenu-item">
+                      <a class="dropdown-menu__link" href="blank.html">Фитнес-браслеты</a>
+                    </li>
+                    <li class="dropdown-menu__submenu-item">
+                      <a class="dropdown-menu__link" href="blank.html">Умные часы</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown-menu__item">
+                  <ul class="dropdown-menu__submenu">
+                    <li class="dropdown-menu__submenu-item">
+                      <a class="dropdown-menu__link" href="blank.html">Квадрокоптеры</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="blank.html">Доставка</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="blank.html">Гарантия</a>
+            </li>
+            <li class="main-menu__item main-menu__item--right">
+              <a class="main-menu__link" href="blank.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <div class="content-wrapper">
+        <div class="page-main__header">
+          <h1 class="page-main__title">Напишите нам</h1>
+        </div>
+
+        <div class="page-main__modal modal-form">
+          <form class="form-feedback" action="https://echo.htmlacademy.ru/" method="POST">
+            <div class="form-feedback__content-wrapper">
+              <label class="form-feedback__label">Ваше имя:
+                <input class="form-feedback__input form-input" type="text" name="name" placeholder="Имя Фамилия" required>
+              </label>
+
+              <label class="form-feedback__label">Ваш e-mail:
+                <input class="form-feedback__input form-input" type="email" name="email" placeholder="email@example.com"
+                  required>
+              </label>
+
+              <label class="form-feedback__label form-feedback__label-textarea">Текст письма:
+                <textarea class="form-feedback__textarea form-input form-textarea" name="message"
+                  placeholder="В свободной форме"></textarea>
+              </label>
+            </div>
+
+            <button class="form-feedback__button button" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="page-footer">
+      <div class="content-wrapper">
+        <div class="page-footer__top">
+          <a class="page-footer__footer-logo footer-logo" href="index.html">
+            <img class="footer-logo__image" src="img/logo-footer.svg" width="163" height="35"
+              alt="Логотип компании Девайс">
+          </a>
+
+          <div class="page-footer__user-menu user-menu">
+            <ul class="user-menu__list user-menu__login user-menu__login--right">
+              <li class="user-menu__list-item">
+                <a class="user-menu__link user-menu__link--icon user-menu__link--icon-user-yellow"
+                  href="blank.html">Валентин Петухов</a>
+              </li>
+              <li class="user-menu__list-item">
+                <a class="user-menu__link" href="blank.html">Выйти</a>
+              </li>
+            </ul>
+
+            <ul class="user-menu__list user-menu__action">
+              <li class="user-menu__list-item">
+                <a class="user-menu__link user-menu__link--icon user-menu__link--icon-chart-yellow"
+                  href="blank.html">Сравнить</a>
+              </li>
+              <li class="user-menu__list-item">
+                <a class="user-menu__link user-menu__link--icon user-menu__link--icon-cart-yellow"
+                  href="blank.html">Корзина</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="page-footer__middle">
+          <address class="page-footer__address">г. Москва, ул. Строителей, 15</address>
+
+          <ul class="footer-menu">
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="blank.html">Доставка</a>
+            </li>
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="blank.html">Гарантия</a>
+            </li>
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="blank.html">Контакты</a>
+            </li>
+          </ul>
+
+          <a class="page-footer__phone" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+        </div>
+
+        <div class="page-footer__bottom">
+          <ul class="page-footer__social-links social-links">
+            <li class="social-links__item">
+              <a class="social-links__link" href="https://www.facebook.com" aria-label="Мы в Facebook">
+                <svg class="social-links__image" width="32" height="32">
+                  <use xlink:href="img/symbols.svg#icons-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a class="social-links__link" href="https://www.instagram.com" aria-label="Мы в Instagram">
+                <svg class="social-links__image" width="32" height="32">
+                  <use xlink:href="img/symbols.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a class="social-links__link" href="https://twitter.com" aria-label="Twitter">
+                <svg class="social-links__image" width="32" height="32">
+                  <use xlink:href="img/symbols.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+
+          <a class="page-footer__copyright footer-copyright" href="https://htmlacademy.ru" aria-label="HTML Academy">
+            <svg class="footer-copyright__image" width="27" height="34">
+              <use xlink:href="img/symbols.svg#logo-htmlacademy"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/index.min.js"></script>
+  </body>
+
+</html>

@@ -1,0 +1,40 @@
+.slider-promo-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 16px;
+}
+
+.slider-promo-controls__button {
+  margin-left: 9px;
+  margin-right: 9px;
+  padding: 0;
+  width: 12px;
+  height: 12px;
+  border: 1px solid @color-black;
+  border-radius: 50%;
+  background-color: transparent;
+  outline: none;
+
+  &:focus {
+    box-shadow: 0 0 1px 1px fade(@color-black, 60%);
+  }
+
+  &--current {
+    position: relative;
+
+    &::before {
+      content: "";
+      box-sizing: border-box;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 6px;
+      height: 6px;
+      border: 1px solid @color-black;
+      border-radius: 50%;
+    }
+  }
+}

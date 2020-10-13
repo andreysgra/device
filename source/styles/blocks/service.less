@@ -1,0 +1,49 @@
+.service {
+  position: relative;
+  padding: 30px 40px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 52px;
+    right: -20px;
+    width: 180px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--delivery::after {
+    background-image: url("../img/delivery.svg");
+    background-size: 156px 188px;
+  }
+
+  &--warranty::after {
+    background-image: url("../img/warranty.svg");
+    background-size: 171px 195px;
+  }
+
+  &--credit::after {
+    background-image: url("../img/credit.svg");
+    background-size: 136px 164px;
+  }
+}
+
+.service__content-wrapper {
+  width: 580px;
+}
+
+.service__title {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-family: @font-family-secondary;
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 58px;
+  letter-spacing: 0.2em;
+}
+
+.service__description {
+  line-height: 28px;
+  letter-spacing: 0.1em;
+}

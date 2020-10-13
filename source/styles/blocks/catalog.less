@@ -1,0 +1,17 @@
+.catalog {
+  display: grid;
+  grid-template-rows: 1fr min-content;
+  box-sizing: border-box;
+  padding: 70px 0 78px 72px;
+  width: 832px;
+}
+
+.catalog__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 40px;
+  row-gap: 28px;
+  .list-reset();
+
+  margin-bottom: 20px;
+}

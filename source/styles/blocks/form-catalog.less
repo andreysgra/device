@@ -1,0 +1,63 @@
+.form-catalog {
+  box-sizing: border-box;
+  padding: 70px 68px 70px 60px;
+  width: 328px;
+}
+
+.form-catalog__fieldset {
+  position: relative;
+  margin: 16px 0 22px;
+  padding: 47px 0 30px;
+  border: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -16px;
+    height: 2px;
+    background-color: @color-black;
+  }
+}
+
+.form-catalog__fieldset-bluetooth {
+  margin-bottom: 10px;
+}
+
+.form-catalog__legend {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 0;
+  font-family: @font-family-secondary;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 17px;
+  letter-spacing: 0.1em;
+}
+
+.form-catalog__list {
+  display: grid;
+  row-gap: 15px;
+  .list-reset();
+}
+
+.form-catalog__checkbox:checked + .form-catalog__label-checkbox::after,
+.form-catalog__radio:checked + .form-catalog__label-radio::after {
+  content: "";
+}
+
+.form-catalog__checkbox:disabled + .form-catalog__label-checkbox,
+.form-catalog__radio:disabled + .form-catalog__label-radio,
+.form-catalog__checkbox:disabled + .form-catalog__label-checkbox::before,
+.form-catalog__radio:disabled + .form-catalog__label-radio::before,
+.form-catalog__checkbox:disabled + .form-catalog__label-checkbox::after,
+.form-catalog__radio:disabled + .form-catalog__label-radio::after {
+  opacity: 0.25;
+  cursor: not-allowed;
+}
+
+.form-catalog__button {
+  width: 100%;
+}

@@ -1,0 +1,39 @@
+.popular-menu {
+  display: grid;
+  grid-template-columns: repeat(6, 160px);
+  gap: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  .list-reset();
+}
+
+.popular-menu__link {
+  display: block;
+  font-family: @font-family-secondary;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  color: inherit;
+  text-decoration: none;
+}
+
+.popular-menu__image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 38px;
+  width: 160px;
+  height: 160px;
+  background-color: @color-yellow;
+
+  .popular-menu__link:hover &,
+  .popular-menu__link:active & {
+    background-color: @color-yellow-dark;
+  }
+}
+
+.popular-menu__link:active .popular-menu__link-text,
+.popular-menu__link:active .popular-menu__image {
+  opacity: 0.3;
+}

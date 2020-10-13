@@ -1,0 +1,41 @@
+.form-label-checkbox {
+  --checkbox-width: 24px;
+  --checkbox-height: 24px;
+  --checkbox-tick-width: 10px;
+  --checkbox-tick-height: 5px;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: ~"calc(var(--checkbox-width) + 18px)";
+  min-height: var(--checkbox-height);
+
+  &::before {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: var(--checkbox-width);
+    height: var(--checkbox-height);
+    border: 2px solid @color-black;
+  }
+
+  &::after {
+    content: none;
+    position: absolute;
+    left: ~"calc((var(--checkbox-width) - var(--checkbox-tick-width)) / 2)";
+    top: ~"calc((var(--checkbox-width) - var(--checkbox-tick-width)) / 2)";
+    width: var(--checkbox-tick-width);
+    height: var(--checkbox-tick-height);
+    transform: rotate(-45deg);
+    border-left: 2px solid @color-black;
+    border-bottom: 2px solid @color-black;
+  }
+
+  &:hover::before,
+  &:hover::after {
+    opacity: 0.6;
+  }
+}

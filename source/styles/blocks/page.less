@@ -2,6 +2,25 @@
   height: 100%;
   font-family: @font-family-base;
   font-size: @font-size-base;
+  font-weight: 300;
   line-height: @line-height-base;
   color: @font-color-base;
+}
+
+.page__modal {
+  position: fixed;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &--hidden {
+    visibility: hidden;
+  }
+}
+
+.page__modal-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }

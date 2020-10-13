@@ -1,0 +1,40 @@
+.form-label-radio {
+  --radio-outer-diameter: 24px;
+  --radio-inner-diameter: 8px;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: ~"calc(var(--radio-outer-diameter) + 18px)";
+  min-height: var(--radio-outer-diameter);
+
+  &::before {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: var(--radio-outer-diameter);
+    height: var(--radio-outer-diameter);
+    border: 2px solid @color-black;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: none;
+    position: absolute;
+    left: calc((var(--radio-outer-diameter) - var(--radio-inner-diameter)) / 2);
+    top: 50%;
+    transform: translateY(-50%);
+    width: var(--radio-inner-diameter);
+    height: var(--radio-inner-diameter);
+    border-radius: 50%;
+    background-color: @color-black;
+  }
+
+  &:hover::before,
+  &:hover::after {
+    opacity: 0.6;
+  }
+}

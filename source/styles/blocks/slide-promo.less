@@ -1,0 +1,49 @@
+.slide-promo {
+  display: grid;
+  grid-template-columns: 530px 570px;
+}
+
+.slide-promo__image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 530px;
+  height: 500px;
+}
+
+.slide-promo__content {
+  position: relative;
+  padding-top: 58px;
+  padding-left: 40px;
+  padding-right: 35px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    width: 100px;
+    height: 7px;
+    background-color: @color-white;
+  }
+}
+
+.slide-promo__title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: @font-family-secondary;
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 58px;
+}
+
+.slide-promo__description {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 28px;
+}
+
+.slide-promo__button {
+  margin-top: 25px;
+}

@@ -1,0 +1,30 @@
+.footer-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  .list-reset();
+}
+
+.footer-menu__item {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.footer-menu__link {
+  font-family: @font-family-secondary;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  color: @color-white;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

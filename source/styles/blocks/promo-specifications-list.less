@@ -1,0 +1,30 @@
+.promo-specifications-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, max-content));
+  column-gap: 60px;
+  margin-top: 46px;
+}
+
+.promo-specifications-list__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.promo-specifications-list__term {
+  order: 1;
+  font-family: @font-family-secondary;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+}
+
+.promo-specifications-list__definition {
+  margin-left: 0;
+  margin-bottom: 16px;
+  font-family: @font-family-secondary;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 42px;
+  letter-spacing: 0.1em;
+}

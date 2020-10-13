@@ -1,0 +1,41 @@
+.button {
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  border: none;
+  padding: 11px 20px;
+  min-width: 180px;
+  vertical-align: middle;
+  font-size: 18px;
+  font-weight: 800;
+  font-family: @font-family-secondary;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  color: @font-color-base;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: transparent;
+
+  &:active {
+    color: fade(@font-color-base, 30%);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 8px;
+    background-color: @color-yellow-dark;
+    transition: height 0.3s ease-in-out;
+  }
+
+  &:hover::before,
+  &:active::before {
+    height: 100%;
+  }
+}

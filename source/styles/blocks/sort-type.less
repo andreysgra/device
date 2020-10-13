@@ -1,0 +1,27 @@
+.sort-type {
+  display: flex;
+  flex-wrap: wrap;
+  .list-reset();
+
+  width: 495px;
+}
+
+.sort-type__item {
+  margin-right: 33px;
+}
+
+.sort-type__link {
+  font-size: 14px;
+  line-height: 19px;
+  color: fade(@color-black, 30%);
+  text-decoration: none;
+
+  &:active,
+  &--active {
+    color: @color-black;
+  }
+
+  &:hover:not(.sort-type__link--active) {
+    color: fade(@color-black, 60%);
+  }
+}
