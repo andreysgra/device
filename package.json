@@ -30,7 +30,7 @@
     "browser-sync": "^2.26.7",
     "cross-env": "^7.0.2",
     "del": "^6.0.0",
-    "eslint": "^7.10.0",
+    "eslint": "^7.11.0",
     "gh-pages": "^3.0.0",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
