@@ -1,5 +1,7 @@
-import Slider from './slider';
-import Modal from './modal';
+import Slider from './modules/slider';
+import Modal from './modules/modal';
+import Map from './modules/map';
+import { URL_MAP } from './const';
 
 const sliderPromoElement = document.querySelector('.slider-promo');
 const servicesElement = document.querySelector('.services');
@@ -7,6 +9,7 @@ const modalFormElement = document.querySelector('.modal-form');
 const modalMapElement = document.querySelector('.modal-map');
 const contactsButtonElement = document.querySelector('.contacts__button');
 const contactsMapElement = document.querySelector('.contacts__map');
+const mapId = document.querySelector('#map');
 
 if (sliderPromoElement) {
   new Slider(sliderPromoElement, 'slider-promo__list-item', 'slider-promo-controls').init();
@@ -34,4 +37,8 @@ if (modalMapElement) {
 
     modalMap.show();
   });
+}
+
+if (mapId) {
+  new Map('map', URL_MAP).init();
 }
