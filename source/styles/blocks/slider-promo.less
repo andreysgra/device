@@ -17,6 +17,8 @@
   grid-column-start: 1;
   grid-row-start: 1;
   visibility: hidden;
+  transition: all 1.5s ease-in-out;
+  opacity: 0;
 
   &::after {
     content: "0" counter(slide);
@@ -34,6 +36,8 @@
 
   &--current {
     visibility: visible;
+    transition: all 1.5s ease-in-out;
+    opacity: 1;
   }
 }
 
