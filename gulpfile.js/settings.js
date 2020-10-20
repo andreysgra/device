@@ -29,8 +29,5 @@ module.exports = {
       fonts: dirs.dest + 'fonts/'
     },
     dist: './dist'
-  },
-  vendor: {
-    scripts: []
   }
 };

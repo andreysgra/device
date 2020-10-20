@@ -8,19 +8,27 @@
 }
 
 .page__modal {
+  --block-width: 960px;
+
   position: fixed;
   z-index: 100;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  visibility: hidden;
+
+  &--visible {
+    animation: slide-from-left 0.75s ease-in-out forwards;
+  }
 
   &--hidden {
-    visibility: hidden;
+    animation: slide-to-right 0.75s ease-in-out forwards;
   }
 }
 
 .page__modal-button {
   position: absolute;
+  z-index: 100;
   top: 20px;
   right: 20px;
 }
